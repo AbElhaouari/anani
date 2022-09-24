@@ -1,4 +1,5 @@
 import Axios from "axios";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/Animes.module.css";
 export const getServerSideProps = async () => {
@@ -13,9 +14,9 @@ const Anime = ({ animes }) => {
   return (
     <div className={styles.grid_container}>
       {console.log(animes.data)}
-      {animes.data.map((anime) => {
+      {animes.data.map((anime, key) => {
         return (
-          <div className={styles.grid_item}>
+          <div key={key} className={styles.grid_item}>
             <div className={styles.title}>
               <Link href={`/animeprofile/${anime.mal_id}`}>{anime.title}</Link>
             </div>
@@ -26,7 +27,12 @@ const Anime = ({ animes }) => {
               </p>
             </div>
             <div>
-              <img className={styles.img} src={anime.images.jpg.image_url} />
+              <Image
+                width={300}
+                height={300}
+                className={styles.img}
+                src={anime.images.jpg.image_url}
+              />
             </div>
           </div>
         );

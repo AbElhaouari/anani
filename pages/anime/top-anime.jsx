@@ -27,7 +27,12 @@ const TopAnime = ({ genre }) => {
               </div>
               <div className={styles.title_zoon}>
                 <div className={styles.img}>
-                  <img src={value.images.jpg.image_url} />
+                  <Image
+                    width={100}
+                    height={100}
+                    className={styles.img}
+                    src={value.images.jpg.image_url}
+                  />
                 </div>
                 <div className={styles.title}>
                   <Link href={`/animeprofile/${value.mal_id}`}>

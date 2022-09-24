@@ -1,5 +1,6 @@
 import Axios from "axios";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import styles from "../../styles/anime-search.module.css";
 export const getServerSideProps = async ({ props }) => {
@@ -47,7 +48,12 @@ const AnimeSearch = ({ genre }) => {
                 <div className={styles.title}>{val.title}</div>
 
                 <div className={styles.img}>
-                  <img src={val.images.jpg.image_url} alt="" />
+                  <Image
+                    width={300}
+                    height={400}
+                    className={styles.img}
+                    src={val.images.jpg.image_url}
+                  />
                 </div>
               </div>
             );
