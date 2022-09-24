@@ -19,10 +19,12 @@ const TopAnime = ({ genre }) => {
         <div className={styles.grid_rank}>rank</div>
         <div className={styles.grid_title}>title</div>
         <div className={styles.grid_score}>score</div>
-        {genre.data.map((value) => {
+        {genre.data.map((value, key) => {
           return (
             <>
-              <div className={styles.rank}>{value.rank}</div>
+              <div key={key} className={styles.rank}>
+                {value.rank}
+              </div>
               <div className={styles.title_zoon}>
                 <div className={styles.img}>
                   <img src={value.images.jpg.image_url} />

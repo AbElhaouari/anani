@@ -38,6 +38,7 @@ const AnimeSearch = ({ genre }) => {
           .map((val, key) => {
             return (
               <div
+                key={key}
                 className={styles.item}
                 onClick={() => {
                   linkToAnime(val.mal_id);
