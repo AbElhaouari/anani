@@ -1,7 +1,57 @@
 .container {
-  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.c {
+  margin-top: 20%;
+}
+.c2 {
+  margin-left: 30%;
+}
+@keyframes identifier {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 260px;
+  }
+  100% {
+    background-position: 260px;
+  }
+}
+.title {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 48px;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  background-clip: text;
+  animation-fill-mode: forwards;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 30px;
+  text-decoration: none;
+
+  animation: identifier 2.5s infinite linear;
+}
+.img {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 5%;
+  border-radius: 9px;
+  padding: 0;
+  width: 50%;
+  height: 300px;
+  transition: transform 0.8s;
+  box-shadow: 10px 5px 20px 0px;
 }
 
+.img:hover {
+  transform: scale(1.1);
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;

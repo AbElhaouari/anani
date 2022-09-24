@@ -9,8 +9,11 @@ const Navbar = () => {
   return (
     <div>
       <div className={styles.navbar}>
-        <Link href="/anime/animes">
+        <Link href="/">
           <p className={styles.text}>home</p>
+        </Link>
+        <Link href="/anime/animes">
+          <p className={styles.text}>All anime</p>
         </Link>
         <Link href="/anime/top-anime">
           <p className={styles.text}>top anime</p>
