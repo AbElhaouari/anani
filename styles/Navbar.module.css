@@ -1,0 +1,15 @@
+.navbar {
+  background-color: rgb(127, 214, 255);
+  display: flex;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.text {
+  color: rgb(10, 10, 10);
+  font-size: 20px;
+  margin-left: 3rem;
+}
+.text:hover {
+  cursor: default;
+}

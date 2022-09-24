@@ -1,0 +1,61 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: 130px 400px 130px;
+  gap: 2px;
+  padding: 5px;
+  margin-left: 25%;
+  align-items: center;
+  border: rgb(218, 218, 218) 1px solid;
+  width: 50%;
+}
+.grid_rank {
+  background-color: rgba(38, 167, 226, 0.8);
+  border: 1px solid rgba(190, 190, 190, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.grid_title {
+  background-color: rgba(38, 167, 226, 0.8);
+  border: 1px solid rgba(190, 190, 190, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.grid_score {
+  background-color: rgba(38, 167, 226, 0.8);
+  border: 1px solid rgba(190, 190, 190, 0.8);
+  color: white;
+
+  padding: 20px;
+  text-align: center;
+}
+
+.rank {
+  text-align: center;
+  font-size: 80px;
+}
+.title_zoon {
+  display: flex;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.title {
+  justify-content: center;
+  margin-left: 2%;
+  color: blue;
+  font-weight: bold;
+}
+.img img {
+  height: 100px;
+  width: 100px;
+}
+.details {
+  color: gray;
+  font-size: 10px;
+  font-weight: normal;
+}
+.score {
+  text-align: center;
+  font-size: 30px;
+}
